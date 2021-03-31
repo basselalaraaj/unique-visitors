@@ -4,11 +4,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var (
-	router = gin.Default()
-)
-
 func GetRoutes() *gin.Engine {
-	AddVisitorsRoutes(router)
+	router := gin.Default()
+	addVisitorsRoutes(router)
 	return router
 }

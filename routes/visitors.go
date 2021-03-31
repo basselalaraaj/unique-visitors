@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func AddVisitorsRoutes(rg *gin.Engine) {
+func addVisitorsRoutes(rg *gin.Engine) {
 	visitors := rg.Group("/visitors")
 	visitors.GET("", handlers.VisitorsHandler)
 	visitors.POST("", handlers.VisitorHandler)
